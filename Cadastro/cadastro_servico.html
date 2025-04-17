@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Oficina | Cadastro de Serviços</title>
+  <link rel="stylesheet" href="cadastro_servico.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Cadastro de Serviços</h1>
+
+    <form id="service-form">
+      <div class="form-group">
+        <label for="cliente">Nome do Cliente</label>
+        <input type="text" id="cliente" name="cliente" required />
+      </div>
+
+      <div class="form-group">
+        <label for="servico">Serviço Realizado</label>
+        <input type="text" id="servico" name="servico" required />
+      </div>
+
+      <div class="form-group">
+        <label for="data">Data do Serviço (DD/MM/AAAA)</label>
+        <input type="text" id="data" name="data" required />
+      </div>
+
+      <div class="form-group">
+        <label for="valor">Valor Total (R$)</label>
+        <input type="number" id="valor" name="valor" required />
+      </div>
+
+      <div class="form-group">
+        <label for="maoDeObra">Valor Mão de Obra (R$)</label>
+        <input type="number" id="maoDeObra" name="maoDeObra" required />
+      </div>
+
+      <div class="form-group">
+        <label for="materiais">Valor de Materiais (R$)</label>
+        <input type="number" id="materiais" name="materiais" required />
+      </div>
+
+      <div class="form-group">
+        <label for="status">Status do Pagamento</label>
+        <select id="status" name="status" required>
+          <option value="" disabled selected>Selecione o status</option>
+          <option value="Não pago">Não pago</option>
+          <option value="Pago">Pago</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="metodoPagamento">Método de Pagamento</label>
+        <select id="metodoPagamento" name="metodoPagamento" required>
+          <option value="" disabled selected>Selecione o método de pagamento</option>
+          <option value="Pix">PIX</option>
+          <option value="Dinheiro">Dinheiro</option>
+          <option value="Cartão">Cartão</option>
+        </select>
+      </div>
+
+      <div class="form-full">
+        <button type="submit" class="btn-enviar">Adicionar Serviço</button>
+      </div>
+    </form>
+
+    <button class="btn-analise" onclick="window.location.href='../Relatorio/relatorio.html'">
+      Visualizar Relatório
+    </button>
+  </div>
+
+  <script src="cadastro_servico.js"></script>
+</body>
+</html>
