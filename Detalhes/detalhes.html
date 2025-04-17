@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Detalhes do Serviço | Oficina</title>
+  <link rel="stylesheet" href="detalhes.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Detalhes do Serviço</h1>
+
+    <div id="mensagem-sucesso" class="mensagem-sucesso" style="display: none;">
+      Alterações salvas com sucesso!
+    </div>
+    
+    <form id="detalhes-form">
+      <div>
+        <label for="cliente">Nome do Cliente</label>
+        <input type="text" id="cliente" disabled />
+      </div>
+
+      <div>
+        <label for="servico">Serviço Realizado</label>
+        <input type="text" id="servico" disabled />
+      </div>
+
+      <div>
+        <label for="data">Data do Serviço (DD/MM/AAAA)</label>
+        <input type="text" id="data" disabled />
+      </div>
+
+      <div>
+        <label for="valor">Valor Total (R$)</label>
+        <input type="number" id="valor" disabled />
+      </div>
+
+      <div>
+        <label for="maoDeObra">Valor Mão de Obra (R$)</label>
+        <input type="number" id="maoDeObra" disabled />
+      </div>
+
+      <div>
+        <label for="materiais">Valor de Materiais (R$)</label>
+        <input type="number" id="materiais" disabled />
+      </div>
+
+      <div>
+        <label for="status">Status do Pagamento</label>
+        <select id="status" disabled>
+          <option value="Não pago">Não pago</option>
+          <option value="Pago">Pago</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="metodoPagamento">Método de Pagamento</label>
+        <select id="metodoPagamento" disabled>
+          <option value="Pix">PIX</option>
+          <option value="Dinheiro">Dinheiro</option>
+          <option value="Cartão">Cartão</option>
+        </select>
+      </div>
+
+      <div style="grid-column: 1 / -1;">
+        <label for="observacao">Observações</label>
+        <textarea id="observacao" placeholder="Observações..." disabled></textarea>
+      </div>
+
+      <div class="botoes">
+        <button type="button" id="btn-editar">Alterar Dados</button>
+        <button type="submit" id="btn-salvar" disabled>Salvar Alterações</button>
+        <button type="button" id="btn-excluir">Excluir Serviço</button>
+        <button type="button" class="btn-analise" onclick="window.location.href='../Relatorio/relatorio.html'">
+          Voltar para Relatório
+        </button>
+      </div>
+      </div>      
+    </form>
+  </div>
+
+  <script src="detalhes.js"></script>
+</body>
+</html>
