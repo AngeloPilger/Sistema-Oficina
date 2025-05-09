@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Convite Especial</title>
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: sans-serif;
+    }
+
+    body {
+      position: relative;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    /* Imagem de fundo escurecida */
+    .background {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background-image: url('turma.png.png');
+      background-size: cover;
+      background-position: center;
+      filter: brightness(50%); /* escurece a imagem */
+      z-index: 0;
+    }
+
+    /* Texto em destaque */
+    .resposta {
+      position: relative;
+      z-index: 1;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+      padding: 2rem;
+    }
+
+    .resposta h2 {
+      background-color: rgba(0, 0, 0, 0.6); /* fundo escuro transparente */
+      padding: 1.5rem;
+      border-radius: 10px;
+      max-width: 80%;
+      font-size: 1.5rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="background"></div>
+
+  <div class="resposta">
+    <h2>
+      Obrigada por aceitar esse convite tão especial para nós!<br>
+      Agradecemos por todas as brincadeiras e ensinamentos,<br>
+      o senhor é uma figura importante para nossa formação como estudantes. <br>
+      ass: 3°B
+    </h2>
+  </div>
+</body>
+</html>

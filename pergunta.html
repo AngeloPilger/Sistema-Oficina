@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Convite ao Padrinho</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+</head>
+<body>
+    <div class="background-image"> <img src="3b.png.jpg" alt="3B"></div> 
+  <div class="container">
+    <div class="question"><h1>Você aceita ser o padrinho da nossa turma?</h1></div>
+    <button id="sim">Sim</button>
+    
+<script>
+    document.getElementById('sim').addEventListener('click', function () {
+      // Lança confete imediatamente
+      confetti();
+  
+      // Espera 2 segundos e redireciona
+      setTimeout(function () {
+        window.location.href = "resposta.html";
+      }, 3000);
+    });
+  </script>
+    <button id="nao"></a>Não</button>
+  </div>
+
+
+  <script src="pergunta.js"></script>
+</body>
+</html>
